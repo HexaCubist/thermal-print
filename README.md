@@ -7,3 +7,5 @@ A quick and dirty tool to easily print rich text and images on supported thermal
 
 
  Use at [https://thermalprint.zac.nz/](https://thermalprint.zac.nz/)
+ 
+ ![](og-image.png)
