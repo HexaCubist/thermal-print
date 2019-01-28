@@ -1,0 +1,94 @@
+body {
+	background: linear-gradient(167deg, #ffb90d 0%, #cc0045 50%, #a832ae 100%);
+	min-height: 100vh;
+	margin: 0;
+}
+
+#editor {
+    width: 58mm;
+    margin: auto;
+    background: white;
+    border: 0;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    font-size: 4mm;
+    filter: drop-shadow(0px 10px 10px rgba(0,0,0,0.2)) drop-shadow(0px 2px 2px rgba(0,0,0,0.8));
+    transition: 0.3s ease all;
+}
+
+.ql-toolbar.ql-snow {
+	background: #ffffff5c;
+	border: 0px transparent;
+	margin-bottom: 1em;
+}
+
+.paper-width {
+    float: right;
+    height: 24px;
+    padding: 8px;
+    padding-bottom: 0;
+    font-family: sans-serif;
+}
+
+#paperwidth {
+    width: 47px;
+    text-align: center;
+    border: 0;
+    background: #ffffff61;
+    padding: 3px;
+    border-radius: 3px;
+}
+
+#editor:after {
+    background: linear-gradient(135deg, #ffffff 5px, transparent 6px), linear-gradient(225deg, #ffffff 5px, transparent 6px);
+    background-position: left-bottom;
+    background-repeat: repeat-x;
+    background-size: 9px 32px;
+    content: " ";
+    display: block;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    height: 32px;
+    transform: translateY(32px);
+}
+
+#editor img {
+	filter: brightness(1.2) grayscale() contrast(2);
+}
+
+@page {
+    margin: 0;
+}
+
+@media print {
+
+	#editor {
+		width: 100% !important;
+		font-size: 3.5mm; /* Fixes incorrect font size when printing (Chrome) */
+		filter: none;
+	}
+
+	.ql-editor {
+		padding: 2mm 3mm;
+	}
+
+	.paper-width, .ql-toolbar, #editor:after {
+		display: none;
+	}
+	body {
+		background: white;
+	}
+
+	#editor img {
+		filter: none;
+	}
+
+}
+
+/*@media screen {
+	#editor.ql-container {
+		font-size: 3mm;
+	}
+}*/

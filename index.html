@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Thermal Print</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://cdn.quilljs.com/1.3.6/quill.snow.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-133325199-1"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-133325199-1');
+	</script>
+</head>
+<body>
+	<div class="paper-width">
+		<label for="paperwidth">Paper Width</label>
+		<input type="number" id="paperwidth" value="58"><span class="units"> mm</span>
+	</div>
+	<main>
+		<div id="editor">
+			<p class="ql-align-center"><span class="ql-size-huge">Welcome!</span></p>
+			<p class="ql-align-center">This tool lets you easily prepare and print quickly for thermal printers. Select the paper width above and start typing! You can also add images:</p>
+		    <br>
+			<p class="ql-align-center"><img src="data:image/png;base64,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"></p>
+			<br>
+			<p class="ql-align-center">When you're ready, just print to the thermal printer using your browser( <strong style="color: rgb(255, 255, 255); background-color: rgb(0, 0, 0);">CTRL+P</strong> ) - make sure you have background colors enabled &amp; headers + footers removed!</p>
+			<br>
+		</div>
+	</main>
+
+<!-- Include the Quill library -->
+<script src="https://cdn.quilljs.com/1.3.6/quill.js"></script>
+<script src="https://unpkg.com/quill-drag-and-drop-module@0.3.0/quill-module.js"></script>
+
+<!-- Initialize Quill editor -->
+<script>
+	var toolbarOptions = [
+	  ['bold', 'italic', 'underline', 'strike'],        // toggled buttons
+	  ['blockquote', 'code-block'],
+
+	  ['image'],
+
+	  [{ 'list': 'ordered'}, { 'list': 'bullet' }],
+	  [{ 'script': 'sub'}, { 'script': 'super' }],      // superscript/subscript
+	  [{ 'indent': '-1'}, { 'indent': '+1' }],          // outdent/indent
+	  [{ 'direction': 'rtl' }],                         // text direction
+
+	  [{ 'size': ['small', false, 'large', 'huge'] }],  // custom dropdown
+
+	  [{ 'color': [] }, { 'background': [] }],          // dropdown with defaults from theme
+	  [{ 'font': [] }],
+	  [{ 'align': [] }],
+
+	  ['clean']                                         // remove formatting button
+	];
+
+  var quill = new Quill('#editor', {
+    theme: 'snow',
+    modules: {
+    	toolbar: toolbarOptions,
+	    dragAndDrop: {
+	      draggables: [
+	        {
+	          content_type_pattern: DragAndDropModule.default.image_content_type_pattern,
+	          tag: 'img',
+	          attr: 'src'
+	        },
+	      ],
+	      // onDrop(file) {
+	      //   return DragAndDropModule.utils.getFileDataUrl(file)
+	      //   .then(base64 => {...})
+	      //   .then(response_from_server => response_from_server.url_of_resource);
+	      // }
+	    }
+    }
+  });
+</script>
+<script type="text/javascript">
+	// Manage paper width
+	let widthInput = document.getElementById('paperwidth');
+	let editor = document.getElementById('editor');
+	function updateWidth(event) {
+		editor.style["width"] = event.target.value + "mm";
+	}
+	widthInput.onchange = updateWidth;
+	widthInput.onpaste = updateWidth;
+	widthInput.onkeyup = updateWidth;
+</script>
+
+</body>
+</html>
